@@ -1,0 +1,145 @@
+:root {
+    --primary: #f2b705;
+    --secondary: #03a64a;
+    --dark: #0f111a;
+    --light: #f5f6fa;
+    --danger: #d92b2b;
+    --font-display: 'Changa', sans-serif;
+    --font-body: 'Space Grotesk', sans-serif;
+}
+
+body {
+    font-family: var(--font-body); 
+    background-color: var(--dark);
+    color: var(--light); 
+    margin: 0; 
+    padding: 0; 
+    overflow-x: hidden;
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><text y="24" font-size="24">⚽</text></svg>'), auto;
+}
+
+body.kicking {
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><text y="24" font-size="24">👟</text></svg>'), auto;
+}
+
+.container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+.text-center { text-align: center; }
+.text-primary { color: var(--primary); }
+.font-display { font-family: var(--font-display); }
+
+#google_translate_element {
+    position: fixed; top: 20px; right: 20px; z-index: 9999;
+    background: rgba(0,0,0,0.8); padding: 5px; border-radius: 8px; border: 1px solid var(--primary);
+}
+
+.hero-launch {
+    padding: 8rem 2rem 4rem 2rem;
+    background: radial-gradient(circle at center, rgba(242, 183, 5, 0.1), transparent 70%);
+    display: flex; flex-direction: column; align-items: center;
+}
+
+.hero-img {
+    width: 100%; max-width: 800px; border-radius: 20px; margin: 2rem 0;
+    border: 3px solid var(--primary); box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+}
+
+.countdown {
+    display: flex; gap: 1.5rem; margin: 2rem 0; flex-wrap: wrap; justify-content: center;
+}
+
+.time-box {
+    background: rgba(255,255,255,0.05); border: 2px solid var(--secondary);
+    padding: 1.5rem; border-radius: 12px; min-width: 100px; text-align: center;
+}
+
+.time-box span { 
+    display: block; font-size: 3.5rem; font-family: var(--font-display); font-weight: 800; line-height: 1; color: var(--light); 
+}
+
+.time-box label { 
+    font-size: 0.9rem; text-transform: uppercase; color: var(--secondary); font-weight: bold; 
+}
+
+.btn-console {
+    background-color: var(--primary); color: var(--dark);
+    padding: 1rem 3rem; border-radius: 12px; font-weight: 800;
+    text-transform: uppercase; font-family: var(--font-display); font-size: 1.3rem;
+    border: none; text-decoration: none; display: inline-block; cursor: pointer;
+    transition: all 0.3s ease; box-shadow: 0 0 20px rgba(242, 183, 5, 0.3);
+    text-align: center;
+}
+
+.btn-console:hover { 
+    transform: scale(1.05); box-shadow: 0 0 30px rgba(242, 183, 5, 0.6); 
+}
+
+/* Contenedor Publicitario Dinámico (Ads) */
+.ad-container {
+    background: rgba(255,255,255,0.02); border: 2px dashed rgba(242, 183, 5, 0.4);
+    padding: 2rem; border-radius: 12px; text-align: center; margin: 3rem auto; max-width: 900px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+.ad-badge {
+    background: var(--primary); color: var(--dark); padding: 0.3rem 0.8rem;
+    border-radius: 6px; font-size: 0.75rem; font-weight: bold; text-transform: uppercase;
+}
+
+/* Estilos de Botones para Redes Sociales de Masificación */
+.social-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.social-btn {
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: block;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.social-btn:hover {
+    transform: translateY(-3px);
+}
+
+.social-btn.youtube { background-color: #ff0000; }
+.social-btn.tiktok { background-color: #000000; border: 1px solid #25f4ee; }
+.social-btn.instagram { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
+.social-btn.twitch { background-color: #9146ff; }
+
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; margin-top: 4rem; }
+.card { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); padding: 2rem; border-radius: 16px; }
+
+.video-wrapper {
+    position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;
+    border-radius: 12px; border: 2px solid var(--primary);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+.video-wrapper iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+.auth-box { max-width: 500px; margin: 0 auto; }
+.auth-tabs { display: flex; gap: 1rem; margin-bottom: 2rem; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 1rem; }
+.tab-btn { background: transparent; border: none; color: #aaa; font-size: 1.1rem; font-weight: bold; cursor: pointer; padding: 0.5rem 1rem; transition: color 0.2s; }
+.tab-btn.active { color: var(--primary); border-bottom: 2px solid var(--primary); }
+
+.input-group { margin-bottom: 1.2rem; text-align: left; }
+.input-group label { display: block; font-size: 0.9rem; margin-bottom: 0.5rem; color: #ccc; }
+.input-group input {
+    width: 100%; padding: 1rem; background: rgba(0,0,0,0.5); 
+    border: 1px solid var(--secondary); border-radius: 8px; color: white; box-sizing: border-box;
+    font-family: var(--font-body);
+}
+
+@media (max-width: 768px) {
+    .grid-2 { grid-template-columns: 1fr; }
+    .time-box { min-width: 70px; padding: 1rem; }
+    .time-box span { font-size: 2.5rem; }
+}

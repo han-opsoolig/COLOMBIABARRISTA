@@ -3,106 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lanzamiento Oficial | Colombia Barrista</title>
+    <title>Plataforma Oficial | Colombia Barrista</title>
     <meta name="description" content="El primer metaverso físico y digital que transforma la pasión futbolera en liderazgo comunitario y economía popular.">
     
-    <!-- CSP adaptado para permitir el traductor de Google y scripts de anuncios -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' https: data: blob:; img-src 'self' data: https:; media-src 'self' https:;">
     
     <link href="https://fonts.googleapis.com/css2?family=Changa:wght@400;600;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
-    
-    <style>
-        :root {
-            --primary: #f2b705;
-            --secondary: #03a64a;
-            --dark: #0f111a;
-            --light: #f5f6fa;
-            --danger: #d92b2b;
-            --font-display: 'Changa', sans-serif;
-            --font-body: 'Space Grotesk', sans-serif;
-        }
-
-        body {
-            font-family: var(--font-body); background-color: var(--dark);
-            color: var(--light); margin: 0; padding: 0; overflow-x: hidden;
-            cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><text y="24" font-size="24">⚽</text></svg>'), auto;
-        }
-        body.kicking {
-            cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><text y="24" font-size="24">👟</text></svg>'), auto;
-        }
-
-        /* Utilidades de Diseño */
-        .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
-        .text-center { text-align: center; }
-        .text-primary { color: var(--primary); }
-        .font-display { font-family: var(--font-display); }
-        
-        /* Traductor Automático */
-        #google_translate_element {
-            position: fixed; top: 20px; right: 20px; z-index: 9999;
-            background: rgba(0,0,0,0.8); padding: 5px; border-radius: 8px; border: 1px solid var(--primary);
-        }
-
-        /* Héroe y Contador */
-        .hero-launch {
-            padding: 8rem 2rem 4rem 2rem;
-            background: radial-gradient(circle at center, rgba(242, 183, 5, 0.1), transparent 70%);
-            display: flex; flex-direction: column; align-items: center;
-        }
-        .hero-img {
-            width: 100%; max-width: 800px; border-radius: 20px; margin: 2rem 0;
-            border: 3px solid var(--primary); box-shadow: 0 10px 40px rgba(0,0,0,0.5);
-        }
-        
-        .countdown {
-            display: flex; gap: 1.5rem; margin: 2rem 0; flex-wrap: wrap; justify-content: center;
-        }
-        .time-box {
-            background: rgba(255,255,255,0.05); border: 2px solid var(--secondary);
-            padding: 1.5rem; border-radius: 12px; min-width: 100px; text-align: center;
-        }
-        .time-box span { display: block; font-size: 3.5rem; font-family: var(--font-display); font-weight: 800; line-height: 1; color: var(--light); }
-        .time-box label { font-size: 0.9rem; text-transform: uppercase; color: var(--secondary); font-weight: bold; }
-
-        /* Botones y Publicidad */
-        .btn-console {
-            background-color: var(--primary); color: var(--dark);
-            padding: 1rem 3rem; border-radius: 12px; font-weight: 800;
-            text-transform: uppercase; font-family: var(--font-display); font-size: 1.3rem;
-            border: none; text-decoration: none; display: inline-block;
-            transition: all 0.3s ease; box-shadow: 0 0 20px rgba(242, 183, 5, 0.3);
-        }
-        .btn-console:hover { transform: scale(1.05); box-shadow: 0 0 30px rgba(242, 183, 5, 0.6); }
-
-        .ad-container {
-            background: rgba(255,255,255,0.02); border: 1px dashed rgba(255,255,255,0.2);
-            padding: 2rem; border-radius: 12px; text-align: center; margin: 3rem auto; max-width: 800px;
-        }
-        .ad-badge {
-            background: var(--primary); color: var(--dark); padding: 0.2rem 0.5rem;
-            border-radius: 4px; font-size: 0.7rem; font-weight: bold; text-transform: uppercase;
-        }
-
-        /* Secciones Grid */
-        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; margin-top: 4rem; }
-        .card { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); padding: 2rem; border-radius: 16px; }
-        
-        .video-wrapper {
-            position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;
-            border-radius: 12px; border: 2px solid var(--primary);
-        }
-        .video-wrapper iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
-
-        @media (max-width: 768px) {
-            .grid-2 { grid-template-columns: 1fr; }
-            .time-box { min-width: 70px; padding: 1rem; }
-            .time-box span { font-size: 2.5rem; }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- ⚠️ MÚSICA DE INICIO -->
+    <!-- MÚSICA DE INICIO -->
     <audio id="audio-inicio" src="cancion_inicio.mp3"></audio>
 
     <!-- Traductor Automático -->
@@ -121,10 +32,10 @@
             La revolución del barrismo, la economía popular y Eco Alianza Digital. Únete a la lista de espera oficial de <strong>Colombia Barrista</strong>.
         </p>
 
-        <!-- ⚠️ IMAGEN PRINCIPAL (image_game.png) -->
-        <img src="image_game.png" alt="Lanzamiento Colombia Barrista" class="hero-img">
+        <div style="width: 100%; display: flex; justify-content: center;">
+            <img src="image_game.png" alt="Metaverso Colombia Barrista" class="hero-img">
+        </div>
 
-        <!-- Reloj Contador -->
         <div class="countdown" id="reloj">
             <div class="time-box"><span id="dias">00</span><label>Días</label></div>
             <div class="time-box"><span id="horas">00</span><label>Horas</label></div>
@@ -132,29 +43,74 @@
             <div class="time-box"><span id="segundos">00</span><label>Segundos</label></div>
         </div>
 
-        <a href="#pre-registro" class="btn-console" onclick="document.getElementById('audio-inicio').play()">Pre-Registro VIP</a>
+        <a href="#auth-section" class="btn-console" onclick="document.getElementById('audio-inicio').play()">Acceso VIP / Registro</a>
     </section>
 
-    <!-- ⚠️ MONETIZACIÓN WEB -->
+    <!-- SECCIÓN DE CULTURA DE TRIBUNA -->
     <section class="container">
-        <div class="ad-container">
-            <span class="ad-badge">Espacio Patrocinado</span>
-            <p style="color: #666; font-size: 0.9rem; margin-top: 1rem;">
-                <!-- AQUÍ VA EL CÓDIGO SCRIPT DE TU RED PUBLICITARIA (ADSTERRA O CAS.AI) -->
-                [ESPERANDO ACTIVACIÓN DE ANUNCIOS]
-            </p>
+        <h2 class="text-center font-display text-primary" style="font-size: 2.5rem; text-transform: uppercase; margin-bottom: 2rem;">Cultura de Tribuna</h2>
+        <div class="grid-2">
+            <div class="card text-center">
+                <img src="hincha_mujer.png" alt="Hincha Mujer Colombia Barrista" style="width: 100%; max-width: 220px; border-radius: 12px; margin-bottom: 1rem; border: 2px solid var(--secondary);">
+                <h3 class="font-display text-primary">Pasión y Género</h3>
+                <p>La mujer en el centro de la construcción de convivencia pacífica en los estadios de Colombia.</p>
+            </div>
+            <div class="card text-center">
+                <img src="hincha_hombre.png" alt="Hincha Hombre Colombia Barrista" style="width: 100%; max-width: 220px; border-radius: 12px; margin-bottom: 1rem; border: 2px solid var(--primary);">
+                <h3 class="font-display text-primary">Identidad Popular</h3>
+                <p>El sentir de los parches y las barras organizadas transformado en tejido social y respeto.</p>
+            </div>
         </div>
     </section>
 
-    <!-- Redes Sociales y Videos Virales -->
+    <!-- 💰 MÓDULO PUBLICITARIO DE ALTA MONETIZACIÓN (ADS / ADSTERRA / CAS.AI) -->
+    <section class="container">
+        <div class="ad-container">
+            <span class="ad-badge">Espacio Publicitario Patrocinado - O2O</span>
+            <div id="monetization-ads-slot" style="margin-top: 1rem;">
+                <!-- PEGA AQUÍ TUS SCRIPTS DE ADSTERRA, GOOGLE ADSENSE O CAS.AI MAÑANA -->
+                <p style="color: #888; font-size: 0.95rem; font-style: italic;">
+                    [Espacio optimizado para banners de alta conversión y pop-under publicitario de monetización activa]
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🌐 REDES SOCIALES DE MASIFICACIÓN (ESPACIO ABIERTO PARA TUS ENLACES MAÑANA) -->
+    <section class="container">
+        <div class="card" style="text-align: center; border: 2px dashed var(--primary);">
+            <h2 class="font-display text-primary" style="font-size: 2rem; margin-bottom: 1rem;">Conéctate a Nuestras Redes Oficiales</h2>
+            <p style="color: #aaa; margin-bottom: 2rem;">Sigue las transmisiones, contenido viral y actualizaciones en nuestras plataformas de masificación:</p>
+            
+            <div class="social-grid">
+                <!-- Red 1: YouTube -->
+                <a href="AQUÍ_PEGAS_EL_ENLACE_DE_YOUTUBE" target="_blank" class="social-btn youtube">
+                    📺 YouTube Oficial
+                </a>
+                <!-- Red 2: TikTok -->
+                <a href="AQUÍ_PEGAS_EL_ENLACE_DE_TIKTOK" target="_blank" class="social-btn tiktok">
+                    🎵 TikTok Viral
+                </a>
+                <!-- Red 3: Instagram -->
+                <a href="AQUÍ_PEGAS_EL_ENLACE_DE_INSTAGRAM" target="_blank" class="social-btn instagram">
+                    📸 Instagram
+                </a>
+                <!-- Red 4: Twitch / Kick -->
+                <a href="AQUÍ_PEGAS_EL_ENLACE_DE_TWITCH" target="_blank" class="social-btn twitch">
+                    🎮 Twitch / Streaming
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Redes Sociales y Videos Institucionales (Visualización Avanzada) -->
     <section class="container">
         <h2 class="text-center font-display text-primary" style="font-size: 2.5rem; text-transform: uppercase;">Descubre el Proyecto</h2>
         <div class="grid-2">
             <div>
-                <!-- ⚠️ TU VIDEO DE YOUTUBE -->
                 <div class="video-wrapper">
-                    <!-- Cambia "dQw4w9WgXcQ" por la ID real de tu video -->
-                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                    <!-- Reproductor optimizado para visualización masiva -->
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
             <div class="card">
@@ -169,10 +125,10 @@
         </div>
     </section>
 
-    <!-- La Consola -->
+    <!-- La Consola, image_0.png e image_9.png -->
     <section class="container grid-2" style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 4rem;">
         <div>
-            <h2 class="font-display text-primary">La Consola Élite</h2>
+            <h2 class="font-display text-primary">La Consola Élite & Ecosistema</h2>
             <p>Preparando la línea de ensamblaje. Hardware 100% modular, 74 Wh de batería (21700) y audio bidireccional VoIP. El estatus máximo dentro del juego, exento de comerciales obligatorios.</p>
             
             <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 2rem;">
@@ -181,21 +137,50 @@
                 <span style="background: #009ee3; color: white; padding: 0.5rem 1rem; border-radius: 5px; font-weight: 800;">Mercado Pago</span>
             </div>
         </div>
-        <div>
-            <!-- ⚠️ IMAGEN DE LA CONSOLA (image_0.png) -->
-            <img src="image_0.png" alt="Hardware de la consola" style="width: 100%; border-radius: 16px; border: 2px solid rgba(255,255,255,0.2);">
+        <div style="display: flex; flex-direction: column; gap: 1rem;">
+            <img src="image_0.png" alt="Hardware de la consola" style="width: 100%; border-radius: 12px; border: 2px solid rgba(255,255,255,0.2);">
+            <img src="image_9.png" alt="Detalle del ecosistema Colombia Barrista" style="width: 100%; border-radius: 12px; border: 2px solid var(--primary);">
         </div>
     </section>
 
-    <!-- Formulario de Pre-Registro -->
-    <section class="container" id="pre-registro">
-        <div class="card" style="max-width: 600px; margin: 0 auto; text-align: center;">
-            <h2 class="font-display text-primary">Asegura tu Lugar</h2>
-            <p>Regístrate hoy para ser notificado el día del lanzamiento y recibir Monedas de Plata de bienvenida.</p>
-            <form style="margin-top: 2rem;" onsubmit="event.preventDefault(); alert('Pre-registro exitoso. Listo para conectar con Supabase.');">
-                <input type="email" required placeholder="Tu correo electrónico" style="width: 100%; padding: 1rem; margin-bottom: 1rem; background: rgba(0,0,0,0.5); border: 1px solid var(--secondary); border-radius: 8px; color: white; box-sizing: border-box;">
-                <input type="text" required placeholder="¿A qué parche o barra perteneces?" style="width: 100%; padding: 1rem; margin-bottom: 1.5rem; background: rgba(0,0,0,0.5); border: 1px solid var(--secondary); border-radius: 8px; color: white; box-sizing: border-box;">
-                <button type="submit" class="btn-console" style="width: 100%; justify-content: center;">Notificarme en el Lanzamiento</button>
+    <!-- SECCIÓN DE AUTENTICACIÓN (LOGIN Y REGISTRO) -->
+    <section class="container" id="auth-section">
+        <div class="auth-box card">
+            <div class="auth-tabs">
+                <button class="tab-btn active" id="btnTabLogin" onclick="switchTab('login')">Iniciar Sesión</button>
+                <button class="tab-btn" id="btnTabRegister" onclick="switchTab('register')">Registrarse</button>
+            </div>
+
+            <!-- Formulario de Login -->
+            <form id="formLogin" class="auth-form" onsubmit="handleLogin(event)">
+                <h2 class="font-display text-primary">Acceso al Sistema</h2>
+                <div class="input-group">
+                    <label>Correo Electrónico</label>
+                    <input type="email" id="loginEmail" required placeholder="tucorreo@dominio.com">
+                </div>
+                <div class="input-group">
+                    <label>Contraseña</label>
+                    <input type="password" id="loginPassword" required placeholder="••••••••">
+                </div>
+                <button type="submit" class="btn-console" style="width: 100%; margin-top: 1rem;">Entrar a la Plataforma</button>
+            </form>
+
+            <!-- Formulario de Registro -->
+            <form id="formRegister" class="auth-form" style="display: none;" onsubmit="handleRegister(event)">
+                <h2 class="font-display text-primary">Crear Cuenta VIP</h2>
+                <div class="input-group">
+                    <label>Correo Electrónico</label>
+                    <input type="email" id="regEmail" required placeholder="tucorreo@dominio.com">
+                </div>
+                <div class="input-group">
+                    <label>Contraseña de Acceso</label>
+                    <input type="password" id="regPassword" required placeholder="Crea una contraseña segura">
+                </div>
+                <div class="input-group">
+                    <label>Parche o Barra / Organización</label>
+                    <input type="text" id="regParche" required placeholder="¿A qué barra perteneces?">
+                </div>
+                <button type="submit" class="btn-console" style="width: 100%; margin-top: 1rem;">Registrarme Ahora</button>
             </form>
         </div>
     </section>
@@ -205,29 +190,6 @@
         <p style="font-size: 0.9rem; color: #666;">© 2026 El Fútbol de la Vida. Todos los derechos reservados.</p>
     </footer>
 
-    <!-- Lógica del Cursor y el Reloj -->
-    <script>
-        document.addEventListener('mousedown', () => document.body.classList.add('kicking'));
-        document.addEventListener('mouseup', () => document.body.classList.remove('kicking'));
-
-        // ⚠️ FECHA DE LANZAMIENTO (Edita aquí el mes, día y año)
-        const fechaLanzamiento = new Date("Dec 15, 2026 12:00:00").getTime();
-
-        const actualizarReloj = setInterval(() => {
-            const ahora = new Date().getTime();
-            const distancia = fechaLanzamiento - ahora;
-
-            if (distancia < 0) {
-                clearInterval(actualizarReloj);
-                document.getElementById("reloj").innerHTML = "<h2 class='text-primary font-display'>¡EL METAVERSO ESTÁ EN VIVO!</h2>";
-                return;
-            }
-
-            document.getElementById("dias").innerText = String(Math.floor(distancia / (1000 * 60 * 60 * 24))).padStart(2, '0');
-            document.getElementById("horas").innerText = String(Math.floor((distancia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))).padStart(2, '0');
-            document.getElementById("minutos").innerText = String(Math.floor((distancia % (1000 * 60 * 60)) / (1000 * 60))).padStart(2, '0');
-            document.getElementById("segundos").innerText = String(Math.floor((distancia % (1000 * 60)) / 1000)).padStart(2, '0');
-        }, 1000);
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
