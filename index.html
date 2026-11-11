@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lanzamiento Oficial | Colombia Barrista</title>
+    <meta name="description" content="El primer metaverso físico y digital que transforma la pasión futbolera en liderazgo comunitario y economía popular.">
+    
+    <!-- CSP adaptado para permitir el traductor de Google y scripts de anuncios -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' https: data: blob:; img-src 'self' data: https:; media-src 'self' https:;">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@400;600;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #f2b705;
+            --secondary: #03a64a;
+            --dark: #0f111a;
+            --light: #f5f6fa;
+            --danger: #d92b2b;
+            --font-display: 'Changa', sans-serif;
+            --font-body: 'Space Grotesk', sans-serif;
+        }
+
+        body {
+            font-family: var(--font-body); background-color: var(--dark);
+            color: var(--light); margin: 0; padding: 0; overflow-x: hidden;
+            cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><text y="24" font-size="24">⚽</text></svg>'), auto;
+        }
+        body.kicking {
+            cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><text y="24" font-size="24">👟</text></svg>'), auto;
+        }
+
+        /* Utilidades de Diseño */
+        .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+        .text-center { text-align: center; }
+        .text-primary { color: var(--primary); }
+        .font-display { font-family: var(--font-display); }
+        
+        /* Traductor Automático */
+        #google_translate_element {
+            position: fixed; top: 20px; right: 20px; z-index: 9999;
+            background: rgba(0,0,0,0.8); padding: 5px; border-radius: 8px; border: 1px solid var(--primary);
+        }
+
+        /* Héroe y Contador */
+        .hero-launch {
+            padding: 8rem 2rem 4rem 2rem;
+            background: radial-gradient(circle at center, rgba(242, 183, 5, 0.1), transparent 70%);
+            display: flex; flex-direction: column; align-items: center;
+        }
+        .hero-img {
+            width: 100%; max-width: 800px; border-radius: 20px; margin: 2rem 0;
+            border: 3px solid var(--primary); box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+        }
+        
+        .countdown {
+            display: flex; gap: 1.5rem; margin: 2rem 0; flex-wrap: wrap; justify-content: center;
+        }
+        .time-box {
+            background: rgba(255,255,255,0.05); border: 2px solid var(--secondary);
+            padding: 1.5rem; border-radius: 12px; min-width: 100px; text-align: center;
+        }
+        .time-box span { display: block; font-size: 3.5rem; font-family: var(--font-display); font-weight: 800; line-height: 1; color: var(--light); }
+        .time-box label { font-size: 0.9rem; text-transform: uppercase; color: var(--secondary); font-weight: bold; }
+
+        /* Botones y Publicidad */
+        .btn-console {
+            background-color: var(--primary); color: var(--dark);
+            padding: 1rem 3rem; border-radius: 12px; font-weight: 800;
+            text-transform: uppercase; font-family: var(--font-display); font-size: 1.3rem;
+            border: none; text-decoration: none; display: inline-block;
+            transition: all 0.3s ease; box-shadow: 0 0 20px rgba(242, 183, 5, 0.3);
+        }
+        .btn-console:hover { transform: scale(1.05); box-shadow: 0 0 30px rgba(242, 183, 5, 0.6); }
+
+        .ad-container {
+            background: rgba(255,255,255,0.02); border: 1px dashed rgba(255,255,255,0.2);
+            padding: 2rem; border-radius: 12px; text-align: center; margin: 3rem auto; max-width: 800px;
+        }
+        .ad-badge {
+            background: var(--primary); color: var(--dark); padding: 0.2rem 0.5rem;
+            border-radius: 4px; font-size: 0.7rem; font-weight: bold; text-transform: uppercase;
+        }
+
+        /* Secciones Grid */
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; margin-top: 4rem; }
+        .card { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); padding: 2rem; border-radius: 16px; }
+        
+        .video-wrapper {
+            position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;
+            border-radius: 12px; border: 2px solid var(--primary);
+        }
+        .video-wrapper iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+        @media (max-width: 768px) {
+            .grid-2 { grid-template-columns: 1fr; }
+            .time-box { min-width: 70px; padding: 1rem; }
+            .time-box span { font-size: 2.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ⚠️ MÚSICA DE INICIO -->
+    <audio id="audio-inicio" src="cancion_inicio.mp3"></audio>
+
+    <!-- Traductor Automático -->
+    <div id="google_translate_element"></div>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'es', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <!-- Héroe y Contador Regresivo -->
+    <section class="hero-launch">
+        <h1 class="font-display text-primary" style="font-size: 3.5rem; text-transform: uppercase; margin: 0; line-height: 1.1; text-align: center;">El Metaverso Está Cargando</h1>
+        <p style="font-size: 1.2rem; color: #aaa; text-align: center; max-width: 600px; margin-top: 1rem;">
+            La revolución del barrismo, la economía popular y Eco Alianza Digital. Únete a la lista de espera oficial de <strong>Colombia Barrista</strong>.
+        </p>
+
+        <!-- ⚠️ IMAGEN PRINCIPAL (image_game.png) -->
+        <img src="image_game.png" alt="Lanzamiento Colombia Barrista" class="hero-img">
+
+        <!-- Reloj Contador -->
+        <div class="countdown" id="reloj">
+            <div class="time-box"><span id="dias">00</span><label>Días</label></div>
+            <div class="time-box"><span id="horas">00</span><label>Horas</label></div>
+            <div class="time-box"><span id="minutos">00</span><label>Minutos</label></div>
+            <div class="time-box"><span id="segundos">00</span><label>Segundos</label></div>
+        </div>
+
+        <a href="#pre-registro" class="btn-console" onclick="document.getElementById('audio-inicio').play()">Pre-Registro VIP</a>
+    </section>
+
+    <!-- ⚠️ MONETIZACIÓN WEB -->
+    <section class="container">
+        <div class="ad-container">
+            <span class="ad-badge">Espacio Patrocinado</span>
+            <p style="color: #666; font-size: 0.9rem; margin-top: 1rem;">
+                <!-- AQUÍ VA EL CÓDIGO SCRIPT DE TU RED PUBLICITARIA (ADSTERRA O CAS.AI) -->
+                [ESPERANDO ACTIVACIÓN DE ANUNCIOS]
+            </p>
+        </div>
+    </section>
+
+    <!-- Redes Sociales y Videos Virales -->
+    <section class="container">
+        <h2 class="text-center font-display text-primary" style="font-size: 2.5rem; text-transform: uppercase;">Descubre el Proyecto</h2>
+        <div class="grid-2">
+            <div>
+                <!-- ⚠️ TU VIDEO DE YOUTUBE -->
+                <div class="video-wrapper">
+                    <!-- Cambia "dQw4w9WgXcQ" por la ID real de tu video -->
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <h3 class="font-display text-primary" style="font-size: 1.8rem; margin-top: 0;">Liderazgo e Institucionalidad</h3>
+                <p>Dirigido por <strong>Arinson Alexis Duarte Aguilar</strong>, líder social con más de 23 años de servicio. Un proyecto galardonado nacionalmente:</p>
+                <ul style="line-height: 1.8; color: #ccc;">
+                    <li>🏆 <strong>Startup Weekend BGA:</strong> Innovación tecnológica social.</li>
+                    <li>🏆 <strong>Santander Región Digital:</strong> Integración comunitaria.</li>
+                    <li>🏆 <strong>Eco Alianza Digital:</strong> Monetización O2O respaldada por el Decreto 596 de 2016.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- La Consola -->
+    <section class="container grid-2" style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 4rem;">
+        <div>
+            <h2 class="font-display text-primary">La Consola Élite</h2>
+            <p>Preparando la línea de ensamblaje. Hardware 100% modular, 74 Wh de batería (21700) y audio bidireccional VoIP. El estatus máximo dentro del juego, exento de comerciales obligatorios.</p>
+            
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 2rem;">
+                <span style="background: white; color: black; padding: 0.5rem 1rem; border-radius: 5px; font-weight: 800; border-bottom: 4px solid #00c853;">SisteCrédito</span>
+                <span style="background: white; color: black; padding: 0.5rem 1rem; border-radius: 5px; font-weight: 800; border-bottom: 4px solid #2962ff;">ADDI</span>
+                <span style="background: #009ee3; color: white; padding: 0.5rem 1rem; border-radius: 5px; font-weight: 800;">Mercado Pago</span>
+            </div>
+        </div>
+        <div>
+            <!-- ⚠️ IMAGEN DE LA CONSOLA (image_0.png) -->
+            <img src="image_0.png" alt="Hardware de la consola" style="width: 100%; border-radius: 16px; border: 2px solid rgba(255,255,255,0.2);">
+        </div>
+    </section>
+
+    <!-- Formulario de Pre-Registro -->
+    <section class="container" id="pre-registro">
+        <div class="card" style="max-width: 600px; margin: 0 auto; text-align: center;">
+            <h2 class="font-display text-primary">Asegura tu Lugar</h2>
+            <p>Regístrate hoy para ser notificado el día del lanzamiento y recibir Monedas de Plata de bienvenida.</p>
+            <form style="margin-top: 2rem;" onsubmit="event.preventDefault(); alert('Pre-registro exitoso. Listo para conectar con Supabase.');">
+                <input type="email" required placeholder="Tu correo electrónico" style="width: 100%; padding: 1rem; margin-bottom: 1rem; background: rgba(0,0,0,0.5); border: 1px solid var(--secondary); border-radius: 8px; color: white; box-sizing: border-box;">
+                <input type="text" required placeholder="¿A qué parche o barra perteneces?" style="width: 100%; padding: 1rem; margin-bottom: 1.5rem; background: rgba(0,0,0,0.5); border: 1px solid var(--secondary); border-radius: 8px; color: white; box-sizing: border-box;">
+                <button type="submit" class="btn-console" style="width: 100%; justify-content: center;">Notificarme en el Lanzamiento</button>
+            </form>
+        </div>
+    </section>
+
+    <footer style="text-align: center; padding: 3rem 1rem; margin-top: 4rem; border-top: 1px solid rgba(255,255,255,0.05);">
+        <p class="font-display text-primary" style="font-size: 1.5rem; margin-bottom: 0.5rem;">COLOMBIA BARRISTA</p>
+        <p style="font-size: 0.9rem; color: #666;">© 2026 El Fútbol de la Vida. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Lógica del Cursor y el Reloj -->
+    <script>
+        document.addEventListener('mousedown', () => document.body.classList.add('kicking'));
+        document.addEventListener('mouseup', () => document.body.classList.remove('kicking'));
+
+        // ⚠️ FECHA DE LANZAMIENTO (Edita aquí el mes, día y año)
+        const fechaLanzamiento = new Date("Dec 15, 2026 12:00:00").getTime();
+
+        const actualizarReloj = setInterval(() => {
+            const ahora = new Date().getTime();
+            const distancia = fechaLanzamiento - ahora;
+
+            if (distancia < 0) {
+                clearInterval(actualizarReloj);
+                document.getElementById("reloj").innerHTML = "<h2 class='text-primary font-display'>¡EL METAVERSO ESTÁ EN VIVO!</h2>";
+                return;
+            }
+
+            document.getElementById("dias").innerText = String(Math.floor(distancia / (1000 * 60 * 60 * 24))).padStart(2, '0');
+            document.getElementById("horas").innerText = String(Math.floor((distancia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))).padStart(2, '0');
+            document.getElementById("minutos").innerText = String(Math.floor((distancia % (1000 * 60 * 60)) / (1000 * 60))).padStart(2, '0');
+            document.getElementById("segundos").innerText = String(Math.floor((distancia % (1000 * 60)) / 1000)).padStart(2, '0');
+        }, 1000);
+    </script>
+</body>
+</html>
