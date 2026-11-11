@@ -6,7 +6,7 @@
     <title>Plataforma Oficial | Colombia Barrista</title>
     <meta name="description" content="El primer metaverso físico y digital que transforma la pasión futbolera en liderazgo comunitario y economía popular.">
     
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' https: data: blob:; img-src 'self' data: https:; media-src 'self' https:;">
+    <!-- Definir CSP restrictiva mediante cabeceras del alojamiento después de validar proveedores externos. -->
     
     <link href="https://fonts.googleapis.com/css2?family=Changa:wght@400;600;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -14,7 +14,7 @@
 <body>
 
     <!-- MÚSICA DE INICIO -->
-    <audio id="audio-inicio" src="cancion_inicio.mp3"></audio>
+    <audio id="audio-inicio" src="cancion_inicio.mp3" preload="none"></audio>
 
     <!-- Traductor Automático -->
     <div id="google_translate_element"></div>
@@ -43,7 +43,7 @@
             <div class="time-box"><span id="segundos">00</span><label>Segundos</label></div>
         </div>
 
-        <a href="#auth-section" class="btn-console" onclick="document.getElementById('audio-inicio').play()">Acceso VIP / Registro</a>
+        <a href="#auth-section" class="btn-console" onclick="reproducirAudioInicio()">Acceso VIP / Registro</a>
     </section>
 
     <!-- SECCIÓN DE CULTURA DE TRIBUNA -->
@@ -63,14 +63,14 @@
         </div>
     </section>
 
-    <!-- 💰 MÓDULO PUBLICITARIO DE ALTA MONETIZACIÓN (ADS / ADSTERRA / CAS.AI) -->
+    <!-- Espacio reservado para publicidad futura; no hay anuncios activos -->
     <section class="container">
         <div class="ad-container">
-            <span class="ad-badge">Espacio Publicitario Patrocinado - O2O</span>
+            <span class="ad-badge">Espacio reservado para futuros patrocinadores</span>
             <div id="monetization-ads-slot" style="margin-top: 1rem;">
                 <!-- PEGA AQUÍ TUS SCRIPTS DE ADSTERRA, GOOGLE ADSENSE O CAS.AI MAÑANA -->
                 <p style="color: #888; font-size: 0.95rem; font-style: italic;">
-                    [Espacio optimizado para banners de alta conversión y pop-under publicitario de monetización activa]
+                    [Publicidad aún no habilitada]
                 </p>
             </div>
         </div>
@@ -84,20 +84,20 @@
             
             <div class="social-grid">
                 <!-- Red 1: YouTube -->
-                <a href="AQUÍ_PEGAS_EL_ENLACE_DE_YOUTUBE" target="_blank" class="social-btn youtube">
-                    📺 YouTube Oficial
+                <a href="https://www.youtube.com/" target="_blank" class="social-btn youtube">
+                    📺 YouTube (enlace pendiente)
                 </a>
                 <!-- Red 2: TikTok -->
-                <a href="AQUÍ_PEGAS_EL_ENLACE_DE_TIKTOK" target="_blank" class="social-btn tiktok">
-                    🎵 TikTok Viral
+                <a href="https://www.tiktok.com/" target="_blank" class="social-btn tiktok">
+                    🎵 TikTok (enlace pendiente)
                 </a>
                 <!-- Red 3: Instagram -->
-                <a href="AQUÍ_PEGAS_EL_ENLACE_DE_INSTAGRAM" target="_blank" class="social-btn instagram">
-                    📸 Instagram
+                <a href="https://www.instagram.com/" target="_blank" class="social-btn instagram">
+                    📸 Instagram (enlace pendiente)
                 </a>
                 <!-- Red 4: Twitch / Kick -->
-                <a href="AQUÍ_PEGAS_EL_ENLACE_DE_TWITCH" target="_blank" class="social-btn twitch">
-                    🎮 Twitch / Streaming
+                <a href="https://www.twitch.tv/" target="_blank" class="social-btn twitch">
+                    🎮 Twitch (enlace pendiente)
                 </a>
             </div>
         </div>
@@ -109,13 +109,13 @@
         <div class="grid-2">
             <div>
                 <div class="video-wrapper">
-                    <!-- Reproductor optimizado para visualización masiva -->
-                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <!-- Sustituye about:blank por el video oficial cuando esté disponible -->
+                    <iframe src="about:blank" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
             <div class="card">
                 <h3 class="font-display text-primary" style="font-size: 1.8rem; margin-top: 0;">Liderazgo e Institucionalidad</h3>
-                <p>Dirigido por <strong>Arinson Alexis Duarte Aguilar</strong>, líder social con más de 23 años de servicio. Un proyecto galardonado nacionalmente:</p>
+                <p>Impulsado por <strong>Darynson Alexis Duarte</strong>, líder social con más de 23 años de servicio. Proyecto con trayectoria comunitaria y reconocimientos reportados por su creador:</p>
                 <ul style="line-height: 1.8; color: #ccc;">
                     <li>🏆 <strong>Startup Weekend BGA:</strong> Innovación tecnológica social.</li>
                     <li>🏆 <strong>Santander Región Digital:</strong> Integración comunitaria.</li>
@@ -129,12 +129,12 @@
     <section class="container grid-2" style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 4rem;">
         <div>
             <h2 class="font-display text-primary">La Consola Élite & Ecosistema</h2>
-            <p>Preparando la línea de ensamblaje. Hardware 100% modular, 74 Wh de batería (21700) y audio bidireccional VoIP. El estatus máximo dentro del juego, exento de comerciales obligatorios.</p>
+            <p>Preparando la línea de ensamblaje. Diseño conceptual de hardware modular; batería y audio pendientes de validación técnica. El estatus máximo dentro del juego, exento de comerciales obligatorios.</p>
             
             <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 2rem;">
-                <span style="background: white; color: black; padding: 0.5rem 1rem; border-radius: 5px; font-weight: 800; border-bottom: 4px solid #00c853;">SisteCrédito</span>
-                <span style="background: white; color: black; padding: 0.5rem 1rem; border-radius: 5px; font-weight: 800; border-bottom: 4px solid #2962ff;">ADDI</span>
-                <span style="background: #009ee3; color: white; padding: 0.5rem 1rem; border-radius: 5px; font-weight: 800;">Mercado Pago</span>
+                <span style="background: white; color: black; padding: 0.5rem 1rem; border-radius: 5px; font-weight: 800; border-bottom: 4px solid #00c853;">SisteCrédito (por confirmar)</span>
+                <span style="background: white; color: black; padding: 0.5rem 1rem; border-radius: 5px; font-weight: 800; border-bottom: 4px solid #2962ff;">ADDI (por confirmar)</span>
+                <span style="background: #009ee3; color: white; padding: 0.5rem 1rem; border-radius: 5px; font-weight: 800;">Mercado Pago (por confirmar)</span>
             </div>
         </div>
         <div style="display: flex; flex-direction: column; gap: 1rem;">
@@ -183,8 +183,37 @@
                     <input type="password" id="regPassword" autocomplete="new-password" minlength="8" required placeholder="Crea una contraseña segura">
                 </div>
                 <div class="input-group">
-                    <label>Parche o Barra / Organización</label>
-                    <input type="text" id="regParche" required placeholder="¿A qué barra perteneces?">
+                    <label for="regEquipo">1. Equipo de fútbol</label>
+                    <select id="regEquipo" required onchange="actualizarBarrasAsociadas()">
+                        <option value="">-- Selecciona tu equipo --</option>
+                        <option value="AtleticoBucaramanga">Atlético Bucaramanga</option>
+                        <option value="AtleticoNacional">Atlético Nacional</option>
+                        <option value="AmericaDeCali">América de Cali</option>
+                        <option value="Millonarios">Millonarios</option>
+                        <option value="SantaFe">Independiente Santa Fe</option>
+                        <option value="Junior">Junior</option>
+                        <option value="DeportivoCali">Deportivo Cali</option>
+                        <option value="Medellin">Independiente Medellín</option>
+                        <option value="OnceCaldas">Once Caldas</option>
+                        <option value="DeportesTolima">Deportes Tolima</option>
+                        <option value="Pereira">Deportivo Pereira</option>
+                        <option value="OtroEquipo">Otro equipo (A o B)</option>
+                    </select>
+                </div>
+                <div class="input-group" id="grupoOtroEquipo" hidden>
+                    <label for="regOtroEquipo">Escribe el nombre de tu equipo</label>
+                    <input id="regOtroEquipo" type="text" maxlength="100" placeholder="Nombre del equipo">
+                </div>
+                <div class="input-group">
+                    <label for="regBarraOficial">2. Barra u organización</label>
+                    <select id="regBarraOficial" required onchange="verificarCreacionBarra()">
+                        <option value="">-- Primero selecciona tu equipo --</option>
+                    </select>
+                    <small>Listado inicial orientativo, no acreditado ni verificado con el Ministerio del Interior.</small>
+                </div>
+                <div class="input-group" id="grupoCrearBarra" hidden>
+                    <label for="regNuevaBarra">Nombre de tu barra o parche</label>
+                    <input id="regNuevaBarra" type="text" maxlength="120" placeholder="Escribe el nombre de tu barra">
                 </div>
                 <button type="submit" class="btn-console" style="width: 100%; margin-top: 1rem;">Registrarme Ahora</button>
             </form>

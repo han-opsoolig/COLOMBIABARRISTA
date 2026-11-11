@@ -143,3 +143,7 @@ body.kicking {
     .time-box { min-width: 70px; padding: 1rem; }
     .time-box span { font-size: 2.5rem; }
 }
+.input-group select { width:100%; padding:1rem; background:#181b25; border:1px solid var(--secondary); border-radius:8px; color:white; box-sizing:border-box; font:inherit; }
+.input-group small {display:block; color:#b8bcc6; margin-top:.4rem; line-height:1.4}
+[hidden] {display:none !important}
+@media(max-width:768px){.hero-launch{padding:5rem 1rem 2rem}.hero-launch h1{font-size:2rem !important}.container{padding:1.25rem}.grid-2{gap:1.25rem;margin-top:2rem}.btn-console{font-size:1rem;padding:.85rem 1.5rem}}
