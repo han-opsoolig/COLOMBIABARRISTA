@@ -146,7 +146,13 @@
     <!-- SECCIÓN DE AUTENTICACIÓN (LOGIN Y REGISTRO) -->
     <section class="container" id="auth-section">
         <div class="auth-box card">
-            <div class="auth-tabs">
+            <p id="authMessage" role="status" aria-live="polite"></p>
+            <div id="sessionPanel" hidden>
+                <p id="sessionEmail"></p>
+                <p>Tu cuenta está conectada. El contenido del juego aún está en desarrollo.</p>
+                <button id="logoutButton" type="button" class="btn-console" onclick="handleLogout()">Cerrar sesión</button>
+            </div>
+            <div class="auth-tabs" id="authTabs">
                 <button class="tab-btn active" id="btnTabLogin" onclick="switchTab('login')">Iniciar Sesión</button>
                 <button class="tab-btn" id="btnTabRegister" onclick="switchTab('register')">Registrarse</button>
             </div>
@@ -156,11 +162,11 @@
                 <h2 class="font-display text-primary">Acceso al Sistema</h2>
                 <div class="input-group">
                     <label>Correo Electrónico</label>
-                    <input type="email" id="loginEmail" required placeholder="tucorreo@dominio.com">
+                    <input type="email" id="loginEmail" autocomplete="email" required placeholder="tucorreo@dominio.com">
                 </div>
                 <div class="input-group">
                     <label>Contraseña</label>
-                    <input type="password" id="loginPassword" required placeholder="••••••••">
+                    <input type="password" id="loginPassword" autocomplete="current-password" required placeholder="••••••••">
                 </div>
                 <button type="submit" class="btn-console" style="width: 100%; margin-top: 1rem;">Entrar a la Plataforma</button>
             </form>
@@ -170,11 +176,11 @@
                 <h2 class="font-display text-primary">Crear Cuenta VIP</h2>
                 <div class="input-group">
                     <label>Correo Electrónico</label>
-                    <input type="email" id="regEmail" required placeholder="tucorreo@dominio.com">
+                    <input type="email" id="regEmail" autocomplete="email" required placeholder="tucorreo@dominio.com">
                 </div>
                 <div class="input-group">
                     <label>Contraseña de Acceso</label>
-                    <input type="password" id="regPassword" required placeholder="Crea una contraseña segura">
+                    <input type="password" id="regPassword" autocomplete="new-password" minlength="8" required placeholder="Crea una contraseña segura">
                 </div>
                 <div class="input-group">
                     <label>Parche o Barra / Organización</label>
@@ -190,6 +196,7 @@
         <p style="font-size: 0.9rem; color: #666;">© 2026 El Fútbol de la Vida. Todos los derechos reservados.</p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="script.js"></script>
 </body>
 </html>
